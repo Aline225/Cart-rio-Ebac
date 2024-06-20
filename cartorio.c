@@ -140,7 +140,8 @@ int main(void) //inicio do programa
 		printf("Escolha a opção desejada:\n\n");//mostra uma mensagem na tela para o usuário
 		printf("\t1_Resgistrar nomes.\n");//mostra uma mensagem na tela para o usuário
 		printf("\t2_Consultar nomes.\n");//mostra uma mensagem na tela para o usuário
-		printf("\t3_Deletar nomes.\n\n"); //mostra uma mensagem na tela para o usuário
+		printf("\t3_Deletar nomes.\n"); //mostra uma mensagem na tela para o usuário
+		printf("\t4_Sair do sistema.\n\n"); //mostra uma mensagem na tela para o usuário
 		printf("Opção: "); //fim do menu
 	
 		scanf("%d", &opcao); //armazenando a escolha do usuário
@@ -160,6 +161,11 @@ int main(void) //inicio do programa
 			case 3:
 			deletar();//chama a função deletar
 			break;//fim do case 3
+			
+			case 4:
+            printf("Saindo do sistema...\n");
+            return(0);//define o retorno como 0 para sair do loop.
+            break;//fim do case 4
 			
 			default: //quando a opção não está presenta nos cases
 			printf("Opção inválida.\n");//mensagem caso a opção não seja válida
