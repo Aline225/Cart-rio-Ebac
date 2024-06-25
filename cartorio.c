@@ -129,7 +129,18 @@ int main(void) //inicio do programa
 {
 	int opcao=0; //definindo as variáveis
 	int laco=1;
+	char senhadigitada[10] = "a";
+	int comparacao;
 	//fim definição variáveis
+	
+	printf("\t\t***Cartório da Ebac***\n\n"); //inicio do menu
+    printf("Login de administrador!\n\nDigite sua senha: ");
+    scanf("%s",senhadigitada);
+    
+    comparacao = strcmp(senhadigitada,"admin");
+	
+	if (senhadigitada[10] == "admin")
+    {
 	for(laco=1;laco=1;)
 	{
 		system("cls");//responsável por limpar a tela
@@ -171,7 +182,13 @@ int main(void) //inicio do programa
 			printf("Opção inválida.\n");//mensagem caso a opção não seja válida
 			system("pause");//pausa o programa até nova ação do usuário
 			break;//fim do default
-		} 
- 	}//Fim da seleção
-}
+	} 
+      }
 
+     }//Fim da seleção
+
+     else
+    
+      printf("Senha incorreta!");
+         
+}
